@@ -1,1 +1,1 @@
-[Link to MY Homeworks](https://bohdankaira.github.io/myhomeworks/)
+Посилання на [MY Homeworks](https://bohdankaira.github.io/myhomeworks/)

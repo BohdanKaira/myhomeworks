@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;  
+}
+body {
+    font-family: 'Open sans', sans-serif;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #070707;
+}
+header {
+    height: 80px;
+    padding: 27.5px;
+}
+nav a {
+    margin: 0 20px;
+    color: #828282;
+    text-decoration: none;
+}
+hr {
+    margin: 0 auto;
+    color: #828282;
+    width: 970px;
+    height: 1px;
+}
+h1 {
+    font-size: 48px;
+    line-height: 66px;
+    text-align: left;
+    margin-bottom: 50px;
+}
+h3 {
+    font-size: 34px;
+    line-height: 47px;
+}
+.active {
+    color: #070707;
+}
+.container {
+    width: min(90%, 970px);
+    margin-inline: auto;
+}
+.skill {
+    display: flex;
+    justify-content: space-between;
+
+}
+.denis-photo {
+    height: 497px;
+}
+.denis-descr {
+    height: 500px;
+    padding: 100px 245px;
+    background-color: #F6F6F6;
+}
+.denis-descr-header {
+    margin-bottom: 50px;
+}
+.denis-descr-text {
+    margin-bottom: 30px;
+}
+.denis-skills {
+    height: 564px;
+    padding: 100px 0;
+}
+.denis-skills-text {
+    margin: 20px 0 50px;
+}
+.denis-skills-apps {
+    margin: 25px 0 60px;
+}
+.denis-portfolio {
+    height: 2268px;
+    padding: 100px 0;
+    background-color: #F6F6F6;
+}
+.denis-portfolio-header {
+    margin-bottom: 50px;
+}
+.denis-portfolio-photo {
+    margin-bottom: 40px;
+}
+.denis-portfolio-text {
+    margin-bottom: 70px;
+}
+footer {
+    height: 400px;
+    margin: 100px 330px;
+}
+.denis-contacts-text {
+    margin: 20px 0 60px;
+}
+button {
+    padding: 0px 16px;
+    height: 44px;
+    background: #070707;
+    border-radius: 22px;
+    color: #FFFFFF;
+    font-family: 'Open sans', sans-serif;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-align: center;
+    cursor: pointer;
+}
+.socials img {
+    margin: 0 25px ;
+    cursor: pointer;
+}
+.socials {
+    margin: 30px 0 60px;
+}

@@ -19,6 +19,9 @@ nav a {
     color: #828282;
     text-decoration: none;
 }
+li {
+    display: inline;
+}
 hr {
     margin: 0 auto;
     color: #828282;

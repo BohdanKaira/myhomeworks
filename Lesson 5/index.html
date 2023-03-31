@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+    <form action="#" id="my_form" onsubmit="alert(decodeURI(new URLSearchParams(Array.from(new FormData(document.getElementById('my_form')))).toString()));return false;" method="post">
+        <div class="container">
+            <h1>Зареєструватися</h1>
+            <p>Будь ласка, заповніть цю форму, щоб створити обліковий запис.</p>
+            
+            <label><b>Повне ім’я</b>
+                <input class="name" type="text" name="name" placeholder="Каїра Богдан" required>
+            </label>
+            <label><b>Email</b>
+                <input class="email" type="text" name="email" placeholder="email@example.com" required>
+            </label>
+            <label><b>Пароль</b>
+                <input class="psw" type="password" name="psw" placeholder="Password" required>
+            </label>
+            <label><b>Пароль ще раз</b>
+                <input class="psw" type="password" name="psw-repeat" placeholder="Repeat Password" required>
+            </label>
+            <label class="cursor"><b>Стать</b>
+                <input class="sex" type="radio" name="sex" value="male" checked> чоловіча  
+            </label>
+            <label class="cursor">
+                <input class="sex" type="radio" name="sex" value="female"> жіноча 
+            </label>
+            <br>
+            <label><b>Вік</b>
+                <input class="age" type="number" name="age" min="1" required>
+            </label>
+            <br>
+            <label><b>Курс</b>
+                <select class="course" name="course" required>
+                    <option value="">Front-End</option>
+                    <option value="back">Back-End</option>
+                    <option value="pm">Project Management</option>
+                    <option value="qa">QA Manual</option>
+                </select>
+            </label>
+            <label><b>Повна адреса</b>
+                <textarea class="adress" name="adress" placeholder="Країна, регіон, місто/селище, вулиця"></textarea>
+            </label>
+            <label class="cursor">
+                <input class="checkbox" type="checkbox" name="privacy" required>  Я погоджуюсь з обробкою персональних даних
+            </label>
+            <button class="reset" type="reset">Очистити форму</button>
+            <button class="submit" type="submit">Зареєструватись</button>
+        </div>
+    </form>
+</body>
+</html>

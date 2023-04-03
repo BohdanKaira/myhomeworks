@@ -3,97 +3,141 @@
   margin: 0;
   box-sizing: border-box;  
 }
+html, body {
+    width: 100%;
+    height: 100%;
+}
+ul {
+    list-style: none;
+}
 body {
     font-family: 'Open sans', sans-serif;
     font-size: 18px;
-    line-height: 25px;
+    line-height: 24.5px;
     text-align: center;
-    color: #070707;
-}
-header {
-    height: 80px;
-    padding: 27.5px;
-}
-nav a {
-    margin: 0 20px;
-    color: #828282;
-    text-decoration: none;
-}
-li {
-    display: inline;
-}
-hr {
-    margin: 0 auto;
-    color: #828282;
-    width: 970px;
-    height: 1px;
-}
-h1 {
-    font-size: 48px;
-    line-height: 66px;
-    text-align: left;
-    margin-bottom: 50px;
-}
-h3 {
-    font-size: 34px;
-    line-height: 47px;
-}
-.active {
     color: #070707;
 }
 .container {
     width: min(90%, 970px);
     margin-inline: auto;
 }
-.skill {
-    display: flex;
-    justify-content: space-between;
-
+h1 {
+    font-size: 48px;
+    line-height: 65.3px;
+    text-align: left;
+    margin-bottom: 45px;
 }
-.denis-photo {
+h3 {
+    font-size: 34px;
+    line-height: 46.3px;
+}
+/*===header===*/
+#header .container {
+    height: 80px;
+    border-bottom: 1px solid #828282;
+}
+nav {
+    padding-top: 28px;
+}
+ul {
+    font-size: 0;
+}
+ul li {
+    display: inline-block; 
+    margin: 0 22px; 
+    
+}
+ul li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #828282;
+}
+ul li a:hover,
+ul li a.active {
+    color: #070707;
+}
+/*===#header===*/
+
+/*===denis-novik===*/
+#denis-novik {
+    margin-top: 12px;
     height: 497px;
 }
+/*===#denis-novik===*/
+
+/*===about-me===*/
 .denis-descr {
     height: 500px;
-    padding: 100px 245px;
+    padding: 100px 0;
     background-color: #F6F6F6;
 }
 .denis-descr-header {
-    margin-bottom: 50px;
+    margin-bottom: 45px;
 }
 .denis-descr-text {
     margin-bottom: 30px;
+}
+/*===#about-me===*/
+
+/*===skills===*/
+.skill {
+    display: flex;
+    justify-content: space-between;
+}
+.skill-container {
+    width: 170px;
+    height: 230px;
 }
 .denis-skills {
     height: 564px;
     padding: 100px 0;
 }
 .denis-skills-text {
-    margin: 20px 0 50px;
+    margin: 15px 0 48px;
 }
 .denis-skills-apps {
-    margin: 25px 0 60px;
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 700;
+    color: #828282;
+    margin: 20px 0 60px;
 }
+.denis-skills-apps-figma {
+    font-size: 14px;
+    font-weight: 700;
+    color: #828282;
+    line-height: 38px;
+    margin: 20px 0 60px;
+} 
+.skill-container img {
+    margin: 0 2px;
+}
+/*===#skills===*/
+
+/*===portfolio===*/
 .denis-portfolio {
     height: 2268px;
     padding: 100px 0;
     background-color: #F6F6F6;
 }
 .denis-portfolio-header {
-    margin-bottom: 50px;
+    margin-bottom: 45px;
 }
 .denis-portfolio-photo {
-    margin-bottom: 40px;
+    margin-bottom: 34px;
 }
 .denis-portfolio-text {
     margin-bottom: 70px;
 }
+/*===#portfolio===*/
+
+/*===footer===*/
 footer {
     height: 400px;
-    margin: 100px 330px;
+    margin: 99px 330px;
 }
 .denis-contacts-text {
-    margin: 20px 0 60px;
+    margin: 15px 0 56px;
 }
 button {
     padding: 0px 16px;
@@ -110,9 +154,16 @@ button {
     cursor: pointer;
 }
 .socials img {
-    margin: 0 25px ;
+    margin: 0 2px ;
     cursor: pointer;
 }
 .socials {
-    margin: 30px 0 60px;
+    margin: 30px 0 46px;
 }
+.socials-text {
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 400;
+    color: #828282;
+}
+/*===#footer===*/

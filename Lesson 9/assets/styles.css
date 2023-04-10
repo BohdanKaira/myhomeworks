@@ -1,0 +1,145 @@
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;  
+}
+:root {
+    --orange-color: #f90 ;
+    --text-color: #544837 ;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+}
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: top;
+}
+a, button {
+    transition: all .2s ease-in;
+    text-decoration: none;
+}
+ul, ol {
+    list-style: none;
+}
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+    font-size: 0;
+    line-height: 0;
+}
+::selection {
+    color: #fff;
+    background-color: var(--orange-color);
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text-color);
+    font-size: 1rem;
+    line-height: 1.75rem;
+}
+.container {
+    width: min(90%, 1200px);
+    margin: 0 auto;
+}
+
+/*==HEADER==*/
+header {
+    height: 80px;
+    margin-bottom: 70px;
+}
+.logo {
+    float: left;
+    margin-top: 25px;
+}
+nav {
+    float: left;
+    margin: 28px 0 0 188px;
+}
+.header-buttons {
+    float: right;
+    margin-top: 18px;
+}
+nav ul.main-menu {
+    font-size: 0;
+}
+nav ul.main-menu li {
+    display: inline-block;
+    margin: 0 10px;
+}
+nav ul.main-menu li a {
+    color: var(--text-color);
+    font-size: 1rem;
+}
+nav ul.main-menu li a:hover,
+nav ul.main-menu li a:active {
+    color: var(--orange-color);
+}
+.btn-header {
+    cursor: pointer;
+    display: inline-block;
+    padding: 13px 22.5px;
+    border-radius: 4px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: 32px;
+}
+.btn-white {
+    background-color: #fff;
+    color: #2f281e;
+    border: 1px solid #bcd0e5;
+}
+.btn-white:hover {
+    background-color: #2f281e;
+    color: #fff;
+}
+.btn-orange {
+    background-color: var(--orange-color);
+    color: #fff;
+    border: var(--orange-color);
+}
+.btn-orange:hover {
+    background-color: #2f281e;
+    color: #fff;
+}
+/*==#HEADER==*/
+
+/*==FIRST-BLOCK==*/
+.left-col {
+    float: left;
+    width: calc(556 * 100% / 1200);
+    padding-top: 97px;
+}
+.right-col {
+    float: right;
+    width: calc(644 * 100% / 1200);
+}
+.h1 {
+    font-size: 2.75rem;
+    line-height: 3.375rem;
+    font-weight: 700;
+    width: calc(500 * 100% / 556);
+    margin-bottom: 33px;
+}
+.slogan {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    width: calc(500 * 100% / 556);
+    margin-bottom: 27px;
+}
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    padding: 14px 42px;
+    border-radius: 4px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+}
+/*==#FIRST-BLOCK==*/

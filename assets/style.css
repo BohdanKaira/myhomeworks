@@ -1,0 +1,41 @@
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;  
+}
+body, html {
+    width: 100%;
+    height: 100%;
+}
+a, button {
+    transition: all .2s ease-in;
+    text-decoration: none;
+}
+ul, ol {
+    list-style: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+}
+.container {
+    width: min(90%, 1200px);
+    margin: 0 auto;  
+}
+main{
+    padding-top: 150px;
+}
+h1 {
+    margin-bottom: 50px;
+}
+ul li {
+    height: 45px;
+    padding: 10px 0;
+    cursor: pointer;
+}
+ul li a {
+    color: rgb(0, 0, 0);
+}

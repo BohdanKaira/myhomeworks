@@ -85,21 +85,9 @@ ul li a.active {
 .denis-skills-text {
     margin: 15px 0 48px;
 }
-.skill-container-ps {
+.skill-container {
     display: inline-block;
-    margin: 0 60px 0 0;
-}
-.skill-container-ai {
-    display: inline-block;
-    margin: 0 55px;
-}
-.skill-container-ae {
-    display: inline-block;
-    margin: 0 50px;
-}
-.skill-container-f {
-    display: inline-block;
-    
+    width: 25%;
 }
 .denis-skills-apps {
     font-size: 14px;

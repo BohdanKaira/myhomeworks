@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;  
+}
+:root {
+    --text-color: #000 ;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+}
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: top;
+}
+
+ul, ol {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+::selection {
+    color: var(--text-color);
+    background-color: #ebc20e;
+}
+body {
+    font-family: 'PT Sans';
+    color: var(--text-color);
+    font-size: 1.75rem;
+    line-height: 3rem;
+}
+.container {
+    width: min(90%, 1200px);
+    margin: 0 auto;
+}
+/*==HEADER==*/
+#header {
+    margin-bottom: 70px;
+}
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+.header-a {
+    display: flex;
+    justify-content: space-between;
+    gap: 57px;
+}
+ul.breadcrumb li {
+    display: inline;
+}
+  ul.breadcrumb li+li:before {
+    content: "/\00a0";
+}
+a.eng span {
+    font-family: 'Tourney';
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+ul.breadcrumb li a {
+    font-family: 'Staatliches';
+    font-size: 1.4rem;
+    letter-spacing: 0.03em;
+}
+/*==HEADER==*/
+
+/*==MAIN==*/
+/*==FIRST==*/
+section.first {
+    padding-bottom: 60px;
+}
+h2 {
+    font-family: 'Francois One';
+    font-size: 2.25rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+.h2 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+    gap: 10px;
+}
+.chapter {
+    font-family: 'Farro';
+    font-weight: 300;
+    font-size: 1.1rem;
+    line-height: 1.1rem;
+    letter-spacing: 0.04em;
+    text-align: center;
+}
+/*==#FIRST==*/
+
+/*==SECOND==*/
+section.second {
+    padding-bottom: 60px;
+}
+/*==#SECOND==*/
+
+/*==THIRD==*/
+section.third {
+    padding-bottom: 60px;
+}
+.p1 {
+    margin-bottom: 29px;
+}
+.p2 {
+    margin-bottom: 29px;
+}
+.p3 {
+    margin-bottom: 29px;
+}
+.p4 {
+    margin-bottom: 41px;
+}
+.p5 {
+    margin-bottom: 38px;
+}
+.p6 {
+    margin-bottom: 29px;
+}
+span.selection {
+    background-color: #DADADA;
+}
+/*==#THIRD==*/
+
+/*==FOURTH==*/
+section.fourth {
+    padding-bottom: 90px;
+}
+section.fourth > .container > p:first-of-type {
+    margin-bottom: 29px;
+}
+/*==#FOURTH==*/
+
+/*==#MAIN==*/

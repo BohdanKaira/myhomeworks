@@ -1,0 +1,208 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;  
+}
+:root {
+    --text-color: #000 ;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+}
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: top;
+}
+ul, ol {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: var(--text-color);
+    cursor: pointer;
+}
+::selection {
+    color: var(--text-color);
+    background-color: #ebc20e;
+}
+body {
+    font-family: 'PT Sans';
+    color: var(--text-color);
+    font-size: 1.75rem;
+    line-height: 3rem;
+}
+.container {
+    width: min(90%, 1200px);
+    margin: 0 auto;  
+}
+/*==HEADER==*/
+#header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    transition: all .2s ease;
+    z-index: 1;
+}
+#header.scrolled {
+    height: 60px;
+    background-color: rgba(255,255,255,.7);
+    backdrop-filter: blur(5px);
+}
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+.header-a {
+    display: flex;
+    justify-content: space-between;
+    gap: 57px;
+}
+ul.breadcrumb li {
+    display: inline;
+}
+  ul.breadcrumb li+li:before {
+    content: "/\00a0";
+}
+a.eng span {
+    font-family: 'Tourney';
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+ul.breadcrumb li a {
+    font-family: 'Staatliches';
+    font-size: 1.4rem;
+    letter-spacing: 0.03em;
+}
+/*==HEADER==*/
+
+/*==MAIN==*/
+.main {
+    padding-top: 152px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+aside {
+    width: 385px;
+    padding: 10px;
+}
+.side-menu {
+    position: sticky;
+    top: 60px;
+}
+aside nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 77px;
+}
+aside nav ul li {
+    border-bottom: 1px solid #BDBDBD;
+}
+aside nav ul li a {
+    font-family: 'Francois One';
+    font-size: 2.25rem;
+    letter-spacing: 0.035em;
+    text-transform: uppercase;
+
+}
+main {
+    background-image: url(../images/bg-picture.svg);
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: top 152px right 231px; /*==Не впевненний, що це так має бути, але PixelPerfect)==*/
+    background-attachment: fixed;
+}
+.sections {
+    width: calc(100% - 415px);
+}
+/*==FIRST==*/
+section.first {
+    padding-bottom: 70px;
+}
+h2 {
+    font-family: 'Francois One';
+    font-size: 2.25rem;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    position: relative;
+    top: 29px;  
+}
+.h2 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+    gap: 10px;
+    margin-bottom: 67px;
+}
+.h2::before {
+    content: '';
+    width: 100px;
+    height: 8px;
+    position: absolute;
+    display: block;
+    background-color: #000;
+}
+.chapter {
+    font-family: 'Farro';
+    font-weight: 300;
+    font-size: 1.1rem;
+    line-height: 1.1rem;
+    letter-spacing: 0.04em;
+    text-align: center;
+    position: relative;
+    top: 25px;
+}
+
+/*==#FIRST==*/
+
+/*==SECOND==*/
+section.second {
+    padding-bottom: 70px;
+}
+/*==#SECOND==*/
+
+/*==THIRD==*/
+section.third {
+    padding-bottom: 70px;
+}
+.p1 {
+    margin-bottom: 34px;
+}
+.p2 {
+    margin-bottom: 34px;
+}
+.p3 {
+    margin-bottom: 30px;
+}
+.p4 {
+    margin-bottom: 31px;
+}
+.p5 {
+    margin-bottom: 40px;
+}
+.p6 {
+    margin-bottom: 40px;
+}
+span.selection {
+    background-color: #DADADA;
+}
+/*==#THIRD==*/
+
+/*==FOURTH==*/
+section.fourth {
+    padding-bottom: 90px;
+}
+section.fourth > p:first-of-type {
+    margin-bottom: 41px;
+}
+/*==#FOURTH==*/
+
+/*==#MAIN==*/

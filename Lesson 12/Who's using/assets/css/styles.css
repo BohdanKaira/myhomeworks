@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;  
+}
+:root {
+    --text-color: #000 ;
+}
+ul, ol {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: var(--text-color);
+    cursor: pointer;
+}
+::selection {
+    color: var(--text-color);
+    background-color: #ebc20e;
+}
+body {
+    font-family: 'PT Sans';
+    color: var(--text-color);
+    font-size: 1.75rem;
+    line-height: 3rem;
+}
+.container {
+    width: min(90%, 1200px);
+    margin: 0 auto;  
+}
+/*==HEADER==*/
+#header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    transition: all .2s ease;
+    z-index: 1;
+}
+#header.scrolled {
+    height: 60px;
+    background-color: rgba(255,255,255,.7);
+    backdrop-filter: blur(5px);
+}
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+.header-a {
+    display: flex;
+    justify-content: space-between;
+    gap: 57px;
+}
+ul.breadcrumb li {
+    display: inline;
+}
+ul.breadcrumb li+li:before {
+    content: "/\00a0";
+}
+a.eng span {
+    font-family: 'Tourney';
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+ul.breadcrumb li a {
+    font-family: 'Staatliches';
+    font-size: 1.4rem;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+}
+/*==#HEADER==*/
+
+/*==MAIN==*/
+main {
+    padding-top: 150px;
+}
+h2 {
+    font-family: 'Roboto';
+    font-weight: 600;
+    font-size: 2.25rem;
+    line-height: 3rem;
+    letter-spacing: 0.04em;
+    margin-bottom: 40px;
+    position: relative;
+    padding-left: 122px;
+}
+h2::before {
+    content: '';
+    width: 100px;
+    height: 8px;
+    background-color: #000;
+    display: flex;
+    left: 0px;
+    top: 20px;
+    position: absolute;
+}
+.flip-card {
+    background-color: transparent;
+    perspective: 1000px;
+    padding: 20px 15px;
+    border-bottom: 1px solid #BFBFBF;
+    border-top: 1px solid #BFBFBF;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    
+}
+.flip-card-inner {
+    position: relative;
+    width: 270px;
+    height: 180px;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+.flip-card-inner:hover {
+    transform: rotateX(180deg);
+}
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flip-card-front {
+    background-color: #E6E6E6; 
+}
+.flip-card-back {
+    background-color: #1A1A1A;
+    transform: rotateX(180deg);
+}
+.flip-card-back img {
+    filter: invert(100%);
+}
+/*==#MAIN==*/

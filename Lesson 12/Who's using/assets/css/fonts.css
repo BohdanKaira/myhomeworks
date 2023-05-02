@@ -1,0 +1,24 @@
+@font-face {
+    font-display: swap; 
+    font-family: 'Staatliches';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/Staatliches/staatliches-v11-latin-regular.woff2') format('woff2'), 
+         url('../fonts/Staatliches/staatliches-v11-latin-regular.woff') format('woff'); 
+  }
+@font-face {
+    font-display: swap; 
+    font-family: 'Tourney';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/Tourney/tourney-v11-latin-600.woff2') format('woff2'), 
+         url('../fonts/Tourney/tourney-v11-latin-600.woff') format('woff'); 
+  }
+@font-face {
+     font-display: swap; 
+     font-family: 'Roboto';
+     font-style: normal;
+     font-weight: 500;
+     src: url('../fonts/Roboto/roboto-v30-latin-500.woff2') format('woff2'), 
+          url('../fonts/Roboto/roboto-v30-latin-500.woff') format('woff'); 
+   }

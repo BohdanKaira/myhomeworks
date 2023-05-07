@@ -32,7 +32,7 @@
             <aside>
                 <nav class="side-menu">
                     <ul>
-                        <li><a href="#introduction">Introduction</a></li>
+                        <li><a href="#introduction" onclick="toSection()">Introduction</a></li>
                         <li><a href="#core-components">Core components</a></li>
                         <li><a href="#react-fundamentals">React fundamentals</a></li>
                         <li><a href="#handling-text-input">Handling text input</a></li>
@@ -110,13 +110,15 @@
         </div>
     </main>
     <script>
-        window.addEventListener('scroll' , function(){
+        window.addEventListener('scroll') , function(){
             if(window.scrollY > 80){
                 document.getElementById('header').classList.add('scrolled');
             } else {
                 document.getElementById('header').classList.remove('scrolled');
             }
-        })
+        }
+        
+       
     </script>    
 </body>
 </html>

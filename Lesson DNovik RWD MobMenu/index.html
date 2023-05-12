@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Denis-CV</title>
+    <link rel="stylesheet" href="assets/css/animate.min.css">
     <link rel="stylesheet" href="assets/css/fonts.css">
     <link rel="stylesheet" href="assets/css/hamburger.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
@@ -50,7 +51,7 @@
             <div class="container">
                 <div class="info-wrap">
                     <div class="info">
-                        <h1>Denis<br>Novik</h1>
+                        <h1 class="wow animate__fadeInTopRight">Denis<br>Novik</h1>
                         <p>UX | UI designer<br>
                             24 years old, Minsk
                         </p>
@@ -67,7 +68,7 @@
                         </button>  
                     </div>
                 </div>
-                <div>
+                <div class="wow animate__fadeInTopRight">
                     <img class="main-photo" src="assets/images/main-photo.jpg" alt="Main-photo">
                     <img class="mob-photo" src="assets/images/Mob-photo.png" alt="Mob-photo">
                 </div>
@@ -75,10 +76,10 @@
         </section>
         <section class="denis-descr" id="about-me">
             <div class="container">
-                <h3 class="denis-descr-header">About me</h3>
-                <p class="denis-descr-text">Hi, I'm Denis – UX/UI designer from Minsk.<br>I'm interested in design and everything connected with it.</p>
-                <p class="denis-descr-text">I'm studying at courses "Web and mobile design<br>interfaces" in IT-Academy.</p>
-                <p>Ready to implement excellent projects<br>with wonderful people.</p>
+                <h3 class="denis-descr-header wow animate__fadeInUp">About me</h3>
+                <p class="denis-descr-text wow animate__fadeInUp" data-wow-delay=".7s">Hi, I'm Denis – UX/UI designer from Minsk.<br>I'm interested in design and everything connected with it.</p>
+                <p class="denis-descr-text wow animate__fadeInUp" data-wow-delay=".7s">I'm studying at courses "Web and mobile design<br>interfaces" in IT-Academy.</p>
+                <p class="wow animate__fadeInUp" data-wow-delay=".7s">Ready to implement excellent projects<br>with wonderful people.</p>
             </div>
         </section>
         <section class="denis-skills" id="skills">
@@ -128,11 +129,11 @@
         <section class="denis-portfolio" id="portfolio">
             <div class="container">
                 <h3 class="denis-portfolio-header">Portfolio</h3>
-                <img class="denis-portfolio-photo" src="assets/images/Fashion-Store.jpg" alt="Fashion-Store">
+                <img class="denis-portfolio-photo wow animate__fadeInLeft" src="assets/images/Fashion-Store.jpg" alt="Fashion-Store">
                 <p class="denis-portfolio-text">Online fashion store -<br>Homepage</p>
-                <img class="denis-portfolio-photo" src="assets/images/reebok_web.jpg" alt="reebok_web">
+                <img class="denis-portfolio-photo wow animate__fadeInRight" src="assets/images/reebok_web.jpg" alt="reebok_web">
                 <p class="denis-portfolio-text">Reebok Store - Concept</p>
-                <img class="denis-portfolio-photo" src="assets/images/braun-landing.png" alt="braun-landing">
+                <img class="denis-portfolio-photo wow animate__fadeInLeft" src="assets/images/braun-landing.png" alt="braun-landing">
                 <p class="denis-portfolio-text">Braun Landing Page - Concept</p>
             </div>
         </section>
@@ -153,11 +154,19 @@
             <p class="socials-text">Like me on<br>LinkedIn, Instagram, Behance,<br>Dribble</p>
         </div>
     </footer>
+<script src="assets/js/wow.min.js"></script>
 <script>
     function toggleMenu(){
         document.getElementById('hamb-btn').classList.toggle('is-active');
         document.getElementById('mobile-sidebar').classList.toggle('open')
     }
+    wow = new WOW(
+                      {
+                      animateClass: 'animate__animated'
+                    }
+                    )
+                    wow.init();
 </script>
+
 </body>
 </html>

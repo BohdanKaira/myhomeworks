@@ -1,0 +1,41 @@
+$color-font: #232323;
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@mixin fz($px_size) {
+    font-size: ($px_size / 16) * 1rem;
+}
+
+@mixin lh($px_size) {
+    line-height: ($px_size / 16) * 1rem;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    @include fz(16);
+    @include lh(20);
+    color: $color-font;
+}
+img {
+    vertical-align: top;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+a {
+    text-decoration: none;
+}
+
+a,
+button {
+    transition: all .2s ease;
+}
+.container {
+    width: min(90%, 500px);
+    margin: 0 auto;
+}
